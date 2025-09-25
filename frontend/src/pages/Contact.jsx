@@ -31,24 +31,24 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6">
-      <div className="w-full max-w-5xl bg-white rounded-xl shadow-2xl border border-gray-200 p-8 flex flex-col md:flex-row gap-8">
+      <div className="w-full max-w-5xl  rounded-xl shadow-2xl border border-gray-200 p-8 flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-2xl font-bold text-green-600 font-serif">
             Get in Touch
           </h2>
           <div>
-            <h3 className="text-lg font-semibold text-gray-700">Call Us:</h3>
-            <p className="text-gray-500">+1 234 567 890</p>
+            <h3 className="text-lg font-semibold text-gray-400">Call Us:</h3>
+            <p className="text-gray-300">+1 234 567 890</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-gray-700">Location:</h3>
-            <p className="text-gray-500">123, Green Street, Flavor Town</p>
+            <h3 className="text-lg font-semibold text-gray-400">Location:</h3>
+            <p className="text-gray-300">123, Green Street, Flavor Town</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-gray-700">
+            <h3 className="text-lg font-semibold text-gray-400">
               Top Services:
             </h3>
-            <ul className="list-disc list-inside text-gray-500 space-y-1">
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Recipe Consultation</li>
               <li>Online Cooking Classes</li>
               <li>Personal Chef Booking</li>
@@ -97,7 +97,7 @@ const Contact = () => {
           </h2>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label className="block text-gray-600 mb-1" htmlFor="fullname">
+              <label className="block text-gray-400 mb-1" htmlFor="fullname">
                 Full Name
               </label>
               <input
@@ -110,7 +110,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-600 mb-1" htmlFor="email">
+              <label className="block text-gray-400 mb-1" htmlFor="email">
                 Email
               </label>
               <input
@@ -123,7 +123,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-600 mb-1" htmlFor="message">
+              <label className="block text-gray-400 mb-1" htmlFor="message">
                 Message
               </label>
               <textarea

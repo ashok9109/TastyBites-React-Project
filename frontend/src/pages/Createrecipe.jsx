@@ -22,9 +22,9 @@ const Createrecipe = () => {
   };
 
   return (
-    <div className="flex justify-center items-center py-10 px-4 min-h-screen">
-      <div className="w-full max-w-2xl border-2 border-gray-300 rounded-lg shadow-md p-6 bg-white">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 font-bold text-green-600 font-[Open_Sans]">
+    <div className="flex justify-center items-center bg-[#1A1A1C] py-10 px-4 min-h-screen">
+      <div className="w-full max-w-2xl border-2 border-gray-300 rounded-lg shadow-md p-6 bg-[#1A1A1C]">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 font-bold text-green-600  font-[Open_Sans]">
           Create a Recipe
         </h1>
         <form onSubmit={handleSubmit(SubmitHandler)} className="space-y-4">
@@ -50,10 +50,10 @@ const Createrecipe = () => {
             placeholder="Enter Chef Name"
           />
           <select
-            className="block w-full outline-none border rounded border-green-400 p-2 bg-white text-gray-700"
+            className="block w-full outline-none border rounded border-green-400 p-2 bg-[#1A1A1C] text-green-700"
             {...register("category")}
           >
-            <option className="text-green-400" value="none">
+            <option className="text-green-400 " value="none">
               Select Category
             </option>
             <option className="text-green-400" value="breakfast">

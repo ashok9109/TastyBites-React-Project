@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex justify-between items-center p-6 rounded-full border-2 relative bg-white">
+    <div className="flex justify-between items-center p-6 rounded-full border-2 relative bg-[#1A1A1C]">
       <h1 className="text-2xl font-[Helvetica] font-bold text-green-600">
         Tasty-Bites
       </h1>

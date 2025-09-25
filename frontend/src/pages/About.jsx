@@ -7,24 +7,24 @@ const About = () => {
     navigate("/contact");
   };
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 gap-8">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 gap-8 ">
       <div className="md:w-1/2 space-y-6">
         <h2 className="text-4xl font-bold text-green-600">
           About Tasty-Bites
         </h2>
-        <p className="text-gray-600 text-lg">
+        <p className="text-white text-lg">
           Welcome to{" "}
           <span className="font-semibold text-green-500">Tasty-Bites</span> -
           your ultimate destination for delicious, easy-to-follow recipes from
           around the world. Whether you're a beginner cook or a seasoned chef,
           our platform offers something for everyone!
         </p>
-        <p className="text-gray-600">
+        <p className="text-white">
           Our mission is to inspire people to create magic in their kitchens
           with fresh ingredients, step-by-step guides, and a pinch of passion.
           From hearty meals to light snacks, Tasty-Bites covers it all.
         </p>
-        <p className="text-gray-600">
+        <p className="text-white">
           Join our growing community and explore endless flavors. Your taste
           adventure begins here!
         </p>

@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 
   return (
-    <footer className="bg-green-50 text-gray-700 pt-10 pb-6 px-6">
+    <footer className=" text-gray-400 bg-[#1A1A1C] pt-10 pb-6 px-6">
       <div className="flex flex-col lg:flex-row justify-between gap-10 max-w-7xl mx-auto">
         <div className="lg:w-1/3 space-y-4">
           <h2 className="text-3xl font-bold text-green-600 font-[Helvetica]">
-        Tasty-Bites
+            Tasty-Bites
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-300">
             Join our newsletter to get delicious recipes delivered straight to
             your inbox!
           </p>
@@ -25,84 +25,48 @@ const Footer = () => {
             </button>
           </div>
         </div>
-
         <div className="lg:w-1/3 flex justify-between">
           <div className="lg:ml-20 ml-4">
-            <h3 className="text-xl font-semibold mb-4 text-green-700">
-              Navigate
-            </h3>
+            <h3 className="text-xl font-semibold mb-4 text-green-700">Navigate</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-green-600 font-semibold">
-                  Home
-                </Link>
+                <Link to="/" className="hover:text-green-600 font-semibold">Home</Link>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  className="hover:text-green-600 font-semibold"
-                >
-                  About
-                </Link>
+                <Link to="/about" className="hover:text-green-600 font-semibold">About</Link>
               </li>
               <li>
-                <Link
-                  to="/recipes"
-                  className="hover:text-green-600 font-semibold"
-                >
-                  Recipes
-                </Link>
+                <Link to="/recipes" className="hover:text-green-600 font-semibold">Recipes</Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-green-600 font-semibold"
-                >
-                  Contact
-                </Link>
+                <Link to="/contact" className="hover:text-green-600 font-semibold">Contact</Link>
               </li>
               <li>
-                <Link to="/fav" className="hover:text-green-600 font-semibold">
-                  Favorite
-                </Link>
+                <Link to="/fav" className="hover:text-green-600 font-semibold">Favorite</Link>
               </li>
             </ul>
           </div>
-
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-green-700">
-              Categories
-            </h3>
+            <h3 className="text-xl font-semibold mb-4 text-green-700">Categories</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-green-600 font-semibold">
-                  Breakfast
-                </a>
+                <a href="#" className="hover:text-green-600 font-semibold">Breakfast</a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600 font-semibold">
-                  Lunch
-                </a>
+                <a href="#" className="hover:text-green-600 font-semibold">Lunch</a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600 font-semibold">
-                  Dinner
-                </a>
+                <a href="#" className="hover:text-green-600 font-semibold"> Dinner</a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600 font-semibold">
-                  Drink
-                </a>
+                <a href="#" className="hover:text-green-600 font-semibold">Drink</a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600 font-semibold">
-                  Dessert
-                </a>
+                <a href="#" className="hover:text-green-600 font-semibold">Dessert</a>
               </li>
             </ul>
           </div>
         </div>
-
         <div className="lg:w-1/3 space-y-4 ml-8">
           <h3 className="text-xl font-semibold text-green-700">Follow Me</h3>
           <div className="flex space-x-4">

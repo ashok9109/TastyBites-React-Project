@@ -38,43 +38,14 @@ const Singlerecipe = () => {
     const filteredData = data.filter((r) => r.id != params.id);
     setData(filteredData);
     localStorage.setItem("recipes", JSON.stringify(filteredData));
-
-    const filteredFav = favorite.filter((f) => f.id != params.id);
-    setFavorite(filteredFav);
-    localStorage.setItem("fav", JSON.stringify(filteredFav));
-
     toast.success("Recipe Deleted!");
     navigate("/recipes");
   };
 
-  const FavHandler = () => {
-    const updatedFav = [...favorite, recipe];
-    setFavorite(updatedFav);
-    localStorage.setItem("fav", JSON.stringify(updatedFav));
-  };
-
-  const UnFavHandler = () => {
-    const updatedFav = favorite.filter((f) => f.id != recipe?.id);
-    setFavorite(updatedFav);
-    localStorage.setItem("fav", JSON.stringify(updatedFav));
-  };
-
   return recipe ? (
-    <div className="w-full flex flex-col md:flex-row gap-6 p-4 md:p-10">
+    <div className="w-full flex flex-col md:flex-row gap-6  p-4 md:p-10">
       <div className="relative md:w-1/2 w-full flex flex-col items-start">
-        {favorite.find((f) => f.id == recipe?.id) ? (
-          <i
-            onClick={UnFavHandler}
-            className="absolute right-4 text-3xl text-yellow-400 ri-star-fill cursor-pointer"
-          ></i>
-        ) : (
-          <i
-            onClick={FavHandler}
-            className="absolute right-4 text-3xl text-yellow-400 ri-star-line cursor-pointer"
-          ></i>
-        )}
-
-        <h1 className="text-3xl sm:text-4xl mb-3 font-bold text-black">
+        <h1 className="text-3xl sm:text-4xl mb-3 font-bold text-gray-300">
           {recipe.title}
         </h1>
         <img
@@ -83,25 +54,25 @@ const Singlerecipe = () => {
           alt=""
         />
         <h2 className="text-red-500 mb-2">
-          <span className="text-black font-bold">Chef Name: </span>
+          <span className="text-gray-300 font-bold">Chef Name: </span>
           {recipe.chef}
         </h2>
         <h2 className="text-red-500 mb-2">
-          <span className="text-black font-bold">Category: </span>
+          <span className="text-gray-300 font-bold">Category: </span>
           {recipe.category}
         </h2>
-        <p className="text-black mb-2">
+        <p className="text-gray-300 mb-2">
           <span className="font-bold">Description:</span> {recipe.desc}
         </p>
-        <p className="text-black mb-2">
+        <p className="text-gray-300 mb-2">
           <span className="font-bold">Ingredients:</span> {recipe.ingredients}
         </p>
-        <p className="text-black mb-2">
+        <p className="text-gray-300 mb-2">
           <span className="font-bold">Instructions:</span> {recipe.instructions}
         </p>
       </div>
 
-      <div className="w-full md:w-1/2 border-2 rounded-lg p-4 md:p-8 text-black bg-white shadow-md">
+      <div className="w-full md:w-1/2 border-2 rounded-lg p-4 md:p-8 text-gray-300 bg-[#1A1A1C] shadow-md">
         <form onSubmit={handleSubmit(UpdateHandler)} className="space-y-4">
           <div>
             <label htmlFor="image" className="block font-semibold mb-1">
