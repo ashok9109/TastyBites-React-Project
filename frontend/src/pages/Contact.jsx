@@ -8,25 +8,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_pjssesm",
-        "template_9qc7fu7", 
-        form.current,
-        "Hji22BW1PEy0SuOwu" 
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Your message has been sent!");
-          form.current.reset(); 
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Something went wrong, please try again.");
-        }
-      );
   };
 
   return (
