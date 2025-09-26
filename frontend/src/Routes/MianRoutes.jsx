@@ -1,3 +1,4 @@
+
 import { Route, Routes } from "react-router-dom";
 import Recipes from "../pages/Recipes";
 import Home from "../pages/Home";
@@ -7,7 +8,7 @@ import Createrecipe from "../pages/Createrecipe";
 import Singlerecipe from "../pages/Singlerecipe";
 import PageNotFound from "../pages/PageNotFound";
 
-const Mainroutes = () => {
+const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -21,4 +22,4 @@ const Mainroutes = () => {
   );
 };
 
-export default Mainroutes;
+export default MainRoutes;
