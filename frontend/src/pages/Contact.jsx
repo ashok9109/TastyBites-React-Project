@@ -1,7 +1,5 @@
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
-import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();

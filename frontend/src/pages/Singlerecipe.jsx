@@ -5,9 +5,6 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const Singlerecipe = () => {
-  const [favorite, setFavorite] = useState(
-    JSON.parse(localStorage.getItem("fav")) || []
-  );
   const { data, setData } = useContext(recipecontext);
   const navigate = useNavigate();
   const params = useParams();
