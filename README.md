@@ -30,5 +30,5 @@ The project focuses on creating a clean, responsive, and engaging user interface
 git clone https://github.com/ashok9109/TastyBites-React-Project.git
 cd TastyBites
 npm install
-npm start
+npm run dev
 
