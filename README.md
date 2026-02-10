@@ -4,7 +4,6 @@ TastyBites is a modern frontend food ordering demo application built using React
 The project focuses on creating a clean, responsive, and engaging user interface for browsing food items such as pizzas, burgers, and more.
 
 ---
-
 ## 🚀 Features
 
 - Interactive food menu with categories (Pizza, Burgers, etc.)
@@ -14,7 +13,6 @@ The project focuses on creating a clean, responsive, and engaging user interface
 - Clean and user-friendly interface for better user engagement
 
 ---
-
 ## 🛠️ Tech Stack
 
 **Frontend:** React.js, Tailwind CSS  
@@ -23,7 +21,6 @@ The project focuses on creating a clean, responsive, and engaging user interface
 **Version Control:** Git
 
 ---
-
 ## ⚙️ Installation & Setup
 
 ```bash
