@@ -1,12 +1,37 @@
-import { useRef } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { IoEarth } from "react-icons/io5";
+import emailjs from "@emailjs/browser"
+import { useState } from "react";
 
 const Contact = () => {
-  const form = useRef();
 
+  // state
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  // emailjs keys 
+  const publickey = import.meta.env.VITE_PUBLIC_KEY
+  const templateId = import.meta.env.VITE_TEMPLATE_ID
+  const serviceId = import.meta.env.VITE_SERVICE_ID
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  // emailjs send process
   const sendEmail = (e) => {
     e.preventDefault();
+    try {
+      emailjs.send(serviceId, templateId, form, publickey).then((res) => {
+        if (res.text === "OK") {
+          alert("Message send successfully✅")
+        }
+      })
+      console.log("this is data", form)
+
+    } catch (error) {
+      alert("Message send failed try again❌")
+      setForm({ name: "", email: "", message: "" });
+    }
   };
 
   return (
@@ -58,7 +83,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
             >
-              <IoEarth/>
+              <IoEarth />
             </a>
             <a
               href="https://x.com/upstareresearch"
@@ -75,14 +100,16 @@ const Contact = () => {
           <h2 className="text-2xl font-bold text-green-600 font-serif">
             Contact Form
           </h2>
-          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+          <form onSubmit={sendEmail} className="space-y-4">
             <div>
               <label className="block text-gray-400 mb-1" htmlFor="fullname">
                 Full Name
               </label>
               <input
+                onChange={handleChange}
+                value={form.name}
                 type="text"
-                name="user_name"
+                name="name"
                 required
                 placeholder="Enter your full name"
                 id="fullname"
@@ -94,9 +121,11 @@ const Contact = () => {
                 Email
               </label>
               <input
+                onChange={handleChange}
+                value={form.email}
                 type="email"
                 id="email"
-                name="user_email"
+                name="email"
                 required
                 placeholder="Enter your email"
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
@@ -107,6 +136,8 @@ const Contact = () => {
                 Message
               </label>
               <textarea
+                onChange={handleChange}
+                value={form.message}
                 name="message"
                 id="message"
                 required
