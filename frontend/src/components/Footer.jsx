@@ -1,14 +1,16 @@
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { IoEarth } from "react-icons/io5";
+
 
 const Footer = () => {
 
   return (
-    <footer className=" text-gray-400 bg-[#1A1A1C] pt-10 pb-6 px-6">
+    <footer className=" text-gray-400 bg-green-50 shadow-2xl rounded-xl border border-gray-200 pt-10 pb-6 px-6">
       <div className="flex flex-col lg:flex-row justify-between gap-10 max-w-7xl mx-auto">
         <div className="lg:w-1/3 space-y-4">
           <h2 className="text-3xl font-bold text-green-600 font-[Helvetica]">
-            Tasty-Bites
+            Upstare Research
           </h2>
           <p className="text-gray-300">
             Join our newsletter to get delicious recipes delivered straight to
@@ -71,25 +73,29 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-green-700">Follow Me</h3>
           <div className="flex space-x-4">
             <a
-              href="#"
+            target="_black"
+              href="https://www.facebook.com/share/1G6cjTVHPX/"
               className="bg-green-200 text-gray-700 hover:bg-green-300 p-3 rounded-full"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+            target="_black"
+              href="https://www.instagram.com/upstare_research?igsh=MXN6OWNsNWRrcXk3NA=="
               className="bg-green-200 text-gray-700 hover:bg-green-300 p-3 rounded-full"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+            target="_black"
+              href="https://www.upstareresearch.com/"
               className="bg-green-200 text-gray-700 hover:bg-green-300 p-3 rounded-full"
             >
-              <FaYoutube />
+              <IoEarth/>
             </a>
             <a
-              href="#"
+            target="_black"
+              href="https://x.com/upstareresearch"
               className="bg-green-200 text-gray-700 hover:bg-green-300 p-3 rounded-full"
             >
               <FaTwitter />
@@ -99,7 +105,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 border-t border-gray-300 pt-4 text-center text-sm text-gray-500">
-        © 2025 TASTYBITES. All rights reserved. Designed with ❤️ by Ashok Yadav.
+        © 2026 Upstare Research. All rights reserved. Designed with ❤️ by Ashok Yadav.
       </div>
     </footer>
   );

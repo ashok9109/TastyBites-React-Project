@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { IoEarth } from "react-icons/io5";
 
 const Contact = () => {
   const form = useRef();
@@ -13,15 +14,15 @@ const Contact = () => {
       <div className="w-full max-w-5xl  rounded-xl shadow-2xl border border-gray-200 p-8 flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-2xl font-bold text-green-600 font-serif">
-            Get in Touch
+            Get in Touch with Upstare Research
           </h2>
           <div>
             <h3 className="text-lg font-semibold text-gray-400">Call Us:</h3>
-            <p className="text-gray-300">+1 234 567 890</p>
+            <p className="text-gray-300">+ 91-6268226160</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-400">Location:</h3>
-            <p className="text-gray-300">123, Green Street, Flavor Town</p>
+            <p className="text-gray-300">Bhopal madhya pradesh</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-400">
@@ -36,7 +37,7 @@ const Contact = () => {
 
           <div className="flex space-x-4 mt-4">
             <a
-              href="https://www.facebook.com/yourprofile"
+              href="https://www.facebook.com/share/1G6cjTVHPX/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
@@ -44,7 +45,7 @@ const Contact = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/yourprofile"
+              href="https://www.instagram.com/upstare_research?igsh=MXN6OWNsNWRrcXk3NA=="
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
@@ -52,15 +53,15 @@ const Contact = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.youtube.com/yourchannel"
+              href="https://www.upstareresearch.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
             >
-              <FaYoutube />
+              <IoEarth/>
             </a>
             <a
-              href="https://twitter.com/yourprofile"
+              href="https://x.com/upstareresearch"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
